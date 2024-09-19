@@ -5,14 +5,29 @@
 
 int main() {
 
+	int bookId;
+	std::string bookName;
+	std::string bookAuthor;
+	double bookPrice;
+	int bookCount;
+
+	std::string newBookId;
+	std::string newBookName;
+	std::string newBookAuthor;
+	double newBookPrice;
+	int newBookCount;
+
+	int choose;
+
+	std::string account;
+ 	std::string password;
+
 	//UG图书管理系统（文字版）
 	//1.登录账号
 	//提示输入账号，密码
 	std::cout << "请输入账号：";
-	std::string account;
 	std::cin >> account;
 	std::cout << "请输入密码：";
-	std::string password;
 	std::cin >> password;
 	
 	if (account._Equal("admin") && password._Equal("admin")) {
@@ -35,20 +50,7 @@ int main() {
 	std::cout << "4.删除图书" << std::endl;
 	std::cout << "5.退出UG图书管理系统" << std::endl;
 	std::cout << "请选择：";
-	int choose;
 	std::cin >> choose;
-
-	int bookId;
-	std::string bookName;
-	std::string bookAuthor;
-	double bookPrice;
-	int bookCount;
-
-	std::string newBookId;
-	std::string newBookName;
-	std::string newBookAuthor;
-	double newBookPrice;
-	int newBookCount;
 
 	while (true) {
 		if (choose < 1 || choose > 5) {
